@@ -1,0 +1,7 @@
+{
+  "name": "DocVector Assistant",
+  "description": "Mobile document assistant with vector search capabilities, semantic retrieval, and server-side Python data processing & model inference.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
