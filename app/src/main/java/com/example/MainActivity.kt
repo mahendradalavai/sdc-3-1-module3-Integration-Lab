@@ -59,7 +59,7 @@ import com.example.ui.screens.ChatAssistantScreen
 import com.example.ui.screens.DocumentLibraryScreen
 import com.example.ui.screens.ServerDiagnosticsScreen
 import com.example.ui.screens.VectorSearchScreen
-import com.example.ui.theme.MyApplicationTheme
+import com.example.ui.theme.DocVectorTheme
 import com.example.ui.theme.VectorMatchHigh
 
 class MainActivity : ComponentActivity() {
@@ -67,7 +67,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MyApplicationTheme {
+            DocVectorTheme {
                 DocumentAssistantApp()
             }
         }

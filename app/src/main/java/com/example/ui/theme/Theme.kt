@@ -52,7 +52,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun MyApplicationTheme(
+fun DocVectorTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = false, // Keep consistent branding colors
     content: @Composable () -> Unit,
@@ -72,3 +72,11 @@ fun MyApplicationTheme(
         content = content
     )
 }
+
+// Backward compatibility alias
+@Composable
+fun MyApplicationTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    dynamicColor: Boolean = false,
+    content: @Composable () -> Unit,
+) = DocVectorTheme(darkTheme, dynamicColor, content)
